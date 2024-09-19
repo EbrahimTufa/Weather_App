@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Add a modern font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+}
+
+.weather-app {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    max-width: 350px;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border for glass effect */
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+}
+
+/* Search Bar Styles */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search input {
+    padding: 10px 15px;
+    width: 70%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search input::placeholder {
+    color: #666;
+}
+
+.search button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search button:hover {
+    background-color: #ff4f41;
+}
+
+/* Weather Info Styles */
+#weather-info {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#city-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#weather-description,
+#temperature,
+#humidity {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#humidity {
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .weather-app {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .search input {
+        width: 60%;
+    }
+
+    .search button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
